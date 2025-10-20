@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Button } from "../ui/button";
 
 export default function Sidebar() {
-  const tools = ["Tool 1", "Tool 2", "Tool 3"];
+  const tools = ["Tool 1"];
   const [selectedTool, setSelectedTool] = useState<string>("Tool 1");
   const onSelectTool = (tool: string) => {
     setSelectedTool(tool);

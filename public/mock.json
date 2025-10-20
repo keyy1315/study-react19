@@ -1,0 +1,352 @@
+[
+  {
+    "id": "1",
+    "title": "React Components",
+    "description": "Learn about reusable React components and their lifecycle methods",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#61dafb"
+  },
+  {
+    "id": "2",
+    "title": "JavaScript ES6+",
+    "description": "Master modern JavaScript features including arrow functions, destructuring, and async/await",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+    "color": "#f7df1e"
+  },
+  {
+    "id": "3",
+    "title": "TypeScript Basics",
+    "description": "Type-safe JavaScript development with TypeScript interfaces and types",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/5968/5968381.png",
+    "color": "#3178c6"
+  },
+  {
+    "id": "4",
+    "title": "CSS Grid Layout",
+    "description": "Create complex layouts with CSS Grid system and responsive design",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/732/732190.png",
+    "color": "#1572b6"
+  },
+  {
+    "id": "5",
+    "title": "TailwindCSS",
+    "description": "Utility-first CSS framework for rapid UI development",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/5968/5968381.png",
+    "color": "#06b6d4"
+  },
+  {
+    "id": "6",
+    "title": "Next.js Framework",
+    "description": "Full-stack React framework with SSR and static site generation",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/5968/5968381.png",
+    "color": "#000000"
+  },
+  {
+    "id": "7",
+    "title": "State Management",
+    "description": "Manage application state with Redux, Zustand, or React Context",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#764abc"
+  },
+  {
+    "id": "8",
+    "title": "API Integration",
+    "description": "Connect your frontend with REST APIs and GraphQL endpoints",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
+    "color": "#ff6b6b"
+  },
+  {
+    "id": "9",
+    "title": "Testing React Apps",
+    "description": "Write unit tests and integration tests for React applications",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#c21325"
+  },
+  {
+    "id": "10",
+    "title": "Performance Optimization",
+    "description": "Optimize React app performance with memoization and lazy loading",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#4caf50"
+  },
+  {
+    "id": "11",
+    "title": "Web Accessibility",
+    "description": "Build accessible web applications following WCAG guidelines",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#ff9800"
+  },
+  {
+    "id": "12",
+    "title": "Responsive Design",
+    "description": "Create mobile-first responsive designs that work on all devices",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/732/732190.png",
+    "color": "#9c27b0"
+  },
+  {
+    "id": "13",
+    "title": "Git Version Control",
+    "description": "Master Git commands and collaborative development workflows",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2111/2111288.png",
+    "color": "#f05032"
+  },
+  {
+    "id": "14",
+    "title": "Package Management",
+    "description": "Manage dependencies with npm, yarn, or pnpm package managers",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2111/2111288.png",
+    "color": "#cb3837"
+  },
+  {
+    "id": "15",
+    "title": "Build Tools",
+    "description": "Configure webpack, Vite, or other build tools for modern development",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#8dd6f9"
+  },
+  {
+    "id": "16",
+    "title": "CSS Animations",
+    "description": "Create smooth animations and transitions with CSS and JavaScript",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/732/732190.png",
+    "color": "#e91e63"
+  },
+  {
+    "id": "17",
+    "title": "Form Handling",
+    "description": "Build dynamic forms with validation using React Hook Form",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#ff5722"
+  },
+  {
+    "id": "18",
+    "title": "Authentication",
+    "description": "Implement user authentication and authorization in React apps",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#607d8b"
+  },
+  {
+    "id": "19",
+    "title": "Database Design",
+    "description": "Design efficient database schemas for modern applications",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
+    "color": "#795548"
+  },
+  {
+    "id": "20",
+    "title": "Cloud Deployment",
+    "description": "Deploy React applications to cloud platforms like Vercel or Netlify",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
+    "color": "#03a9f4"
+  },
+  {
+    "id": "21",
+    "title": "Progressive Web Apps",
+    "description": "Build PWAs with offline capabilities and app-like experiences",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#ffc107"
+  },
+  {
+    "id": "22",
+    "title": "Microservices",
+    "description": "Architect scalable applications using microservices patterns",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
+    "color": "#673ab7"
+  },
+  {
+    "id": "23",
+    "title": "GraphQL APIs",
+    "description": "Build flexible APIs with GraphQL and Apollo Client",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#e10098"
+  },
+  {
+    "id": "24",
+    "title": "Serverless Functions",
+    "description": "Create serverless functions with AWS Lambda or Vercel Functions",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
+    "color": "#ff9800"
+  },
+  {
+    "id": "25",
+    "title": "Docker Containers",
+    "description": "Containerize applications with Docker for consistent deployments",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
+    "color": "#2496ed"
+  },
+  {
+    "id": "26",
+    "title": "CI/CD Pipelines",
+    "description": "Set up continuous integration and deployment workflows",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
+    "color": "#2088ff"
+  },
+  {
+    "id": "27",
+    "title": "Mobile Development",
+    "description": "Build mobile apps with React Native and cross-platform solutions",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#61dafb"
+  },
+  {
+    "id": "28",
+    "title": "Web Security",
+    "description": "Implement security best practices and protect against vulnerabilities",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
+    "color": "#f44336"
+  },
+  {
+    "id": "29",
+    "title": "Performance Monitoring",
+    "description": "Monitor application performance with analytics and error tracking",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
+    "color": "#4caf50"
+  },
+  {
+    "id": "30",
+    "title": "Code Quality",
+    "description": "Maintain high code quality with ESLint, Prettier, and code reviews",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#ff9800"
+  },
+  {
+    "id": "31",
+    "title": "Design Systems",
+    "description": "Create consistent design systems with reusable components",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#9c27b0"
+  },
+  {
+    "id": "32",
+    "title": "Data Visualization",
+    "description": "Create interactive charts and graphs with D3.js and Chart.js",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#e91e63"
+  },
+  {
+    "id": "33",
+    "title": "Real-time Features",
+    "description": "Build real-time applications with WebSockets and Socket.io",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
+    "color": "#00bcd4"
+  },
+  {
+    "id": "34",
+    "title": "SEO Optimization",
+    "description": "Optimize React apps for search engines and improve rankings",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#ff5722"
+  },
+  {
+    "id": "35",
+    "title": "Internationalization",
+    "description": "Support multiple languages and locales in your applications",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#607d8b"
+  },
+  {
+    "id": "36",
+    "title": "Web Components",
+    "description": "Build reusable web components with custom elements",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#3f51b5"
+  },
+  {
+    "id": "37",
+    "title": "Headless CMS",
+    "description": "Integrate headless content management systems with React",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
+    "color": "#795548"
+  },
+  {
+    "id": "38",
+    "title": "Payment Integration",
+    "description": "Implement secure payment processing with Stripe and PayPal",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
+    "color": "#4caf50"
+  },
+  {
+    "id": "39",
+    "title": "Email Services",
+    "description": "Send transactional emails and newsletters from your app",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
+    "color": "#ff9800"
+  },
+  {
+    "id": "40",
+    "title": "File Upload",
+    "description": "Handle file uploads with progress tracking and validation",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#9c27b0"
+  },
+  {
+    "id": "41",
+    "title": "Caching Strategies",
+    "description": "Implement effective caching with Redis and browser storage",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
+    "color": "#e91e63"
+  },
+  {
+    "id": "42",
+    "title": "Error Handling",
+    "description": "Implement robust error handling and user feedback systems",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#f44336"
+  },
+  {
+    "id": "43",
+    "title": "Load Testing",
+    "description": "Test application performance under various load conditions",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
+    "color": "#ff5722"
+  },
+  {
+    "id": "44",
+    "title": "Browser APIs",
+    "description": "Leverage modern browser APIs for enhanced functionality",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#00bcd4"
+  },
+  {
+    "id": "45",
+    "title": "WebAssembly",
+    "description": "Integrate WebAssembly for high-performance computations",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#654ff0"
+  },
+  {
+    "id": "46",
+    "title": "WebRTC",
+    "description": "Build real-time communication features with WebRTC",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#03a9f4"
+  },
+  {
+    "id": "47",
+    "title": "Machine Learning",
+    "description": "Integrate ML models and AI features in web applications",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
+    "color": "#673ab7"
+  },
+  {
+    "id": "48",
+    "title": "Blockchain Integration",
+    "description": "Connect web apps with blockchain networks and smart contracts",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
+    "color": "#f7931a"
+  },
+  {
+    "id": "49",
+    "title": "Voice Interfaces",
+    "description": "Build voice-controlled interfaces with speech recognition",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#ff9800"
+  },
+  {
+    "id": "50",
+    "title": "AR/VR Development",
+    "description": "Create immersive experiences with WebXR and AR.js",
+    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
+    "color": "#9c27b0"
+  }
+]
