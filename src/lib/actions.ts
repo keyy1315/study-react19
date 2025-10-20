@@ -84,8 +84,8 @@ export async function createCardAction(
       };
     }
 
-    // 5초 지연
-    await new Promise((resolve) => setTimeout(resolve, 5000));
+    // 3초 지연
+    await new Promise((resolve) => setTimeout(resolve, 3000));
 
     // 성공 응답 반환
     return {
@@ -127,8 +127,8 @@ export async function deleteCardAction(cardId: string): Promise<boolean> {
       throw new Error(result.error || "카드 삭제에 실패했습니다.");
     }
 
-    // 5초 지연
-    await new Promise((resolve) => setTimeout(resolve, 5000));
+    // 3초 지연
+    await new Promise((resolve) => setTimeout(resolve, 3000));
 
     return true;
   } catch (error) {
@@ -155,6 +155,9 @@ export async function fetchCards(): Promise<CardData[]> {
     if (!response.ok) {
       throw new Error(result.error || "카드 목록 조회에 실패했습니다.");
     }
+
+    // 3초 지연
+    await new Promise((resolve) => setTimeout(resolve, 3000));
 
     return result.cards;
   } catch (error) {

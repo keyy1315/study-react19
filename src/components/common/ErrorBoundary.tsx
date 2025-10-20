@@ -32,7 +32,7 @@ export default class ErrorBoundary extends Component<
 
   // 에러가 발생했을 때 실행되는 생명주기 메서드
   componentDidCatch(error: Error, errorInfo: any) {
-    console.error("ErrorBoundary caught an error:", error, errorInfo);
+    console.error("ErrorBoundary ::", error, errorInfo);
   }
 
   render() {
