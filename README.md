@@ -88,6 +88,7 @@ const [createState, createAction] = useActionState(
 - 서버 액션의 결과를 자동으로 상태로 관리
 - 성공/실패 메시지 자동 처리
 - 컴포넌트 리렌더링 자동 트리거
+- **권장**: 폼 기반 액션에 적합 (생성, 수정)
 
 **prevState 활용법:**
 
@@ -124,7 +125,48 @@ const [createState, createAction] = useActionState(
 createAction(formData); // 실제로는 createAction(prevState, formData)로 호출됨
 ```
 
-### 3. useTransition 훅
+### 3. 혼합 방식 (권장)
+
+**생성**: `useActionState` + `useOptimistic`
+
+```typescript
+// 폼 기반 액션에 적합
+const [createState, createAction] = useActionState(
+  createCardAction,
+  initialActionState
+);
+
+const handleCreateCard = (formData: FormData) => {
+  startTransition(() => {
+    optimisticUpdate({ type: "create", data: optimisticCard });
+    createAction(formData); // FormData 전달
+  });
+};
+```
+
+**삭제**: 일반 async 함수 + `useOptimistic`
+
+```typescript
+// 단순한 액션에 적합
+const handleDeleteCard = async (cardId: string) => {
+  startTransition(async () => {
+    optimisticUpdate({ type: "delete", data: cardId });
+
+    const success = await deleteCard(cardId); // 직접 string 전달
+    if (!success) {
+      // useOptimistic이 자동으로 롤백
+    }
+  });
+};
+```
+
+**장점:**
+
+- 각 액션의 특성에 맞는 적절한 패턴 사용
+- FormData를 억지로 만들 필요 없음
+- 더 간단하고 자연스러운 코드
+
+### 4. useTransition 훅
 
 ```typescript
 const [isPending, startTransition] = useTransition();

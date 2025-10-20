@@ -84,6 +84,9 @@ export async function createCardAction(
       };
     }
 
+    // 5초 지연
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+
     // 성공 응답 반환
     return {
       success: true,
@@ -101,66 +104,36 @@ export async function createCardAction(
   }
 }
 
-// 카드 삭제 액션
-export async function deleteCardAction(
-  prevState: ActionState,
-  formData: FormData
-): Promise<ActionState> {
+// 카드 삭제 함수 (일반 async 함수)
+export async function deleteCardAction(cardId: string): Promise<boolean> {
   try {
-    const id = formData.get("id") as string;
-
-    console.log("prevState:: ", prevState);
-    // prevState 활용 예시 : 연속 액션 방지
-    // 이전 액션이 진행 중이면 새로운 액션을 차단할 수 있음
-    if (prevState.success === false && prevState.error === "server_error") {
-      return {
-        success: false,
-        message: "이전 작업이 실패했습니다. 잠시 후 다시 시도해주세요.",
-        error: "rate_limit",
-      };
-    }
-
     // 유효성 검사
-    if (!id) {
-      return {
-        success: false,
-        message: "카드 ID가 필요합니다.",
-        error: "validation_error",
-      };
+    if (!cardId) {
+      throw new Error("카드 ID가 필요합니다.");
     }
 
     // API 호출
     const response = await fetch(
       `${
         process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
-      }/api/cards?id=${id}`,
+      }/api/cards?id=${cardId}`,
       {
         method: "DELETE",
       }
     );
 
-    const result = await response.json();
-
     if (!response.ok) {
-      return {
-        success: false,
-        message: result.error || "카드 삭제에 실패했습니다.",
-        error: "api_error",
-      };
+      const result = await response.json();
+      throw new Error(result.error || "카드 삭제에 실패했습니다.");
     }
 
-    return {
-      success: true,
-      message: "카드가 성공적으로 삭제되었습니다.",
-      card: result.card,
-    };
+    // 5초 지연
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+
+    return true;
   } catch (error) {
-    console.error("Delete card action error:", error);
-    return {
-      success: false,
-      message: "카드 삭제 중 오류가 발생했습니다.",
-      error: "server_error",
-    };
+    console.error("Delete card error:", error);
+    return false;
   }
 }
 
