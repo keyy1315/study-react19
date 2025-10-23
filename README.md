@@ -443,6 +443,146 @@ yarn dev
    });
    ```
 
+## 🔧 React Compiler 최적화 분석
+
+이 프로젝트는 **React Compiler**를 활용하여 `useMemo`나 `useCallback` 없이도 자동으로 최적화되는 부분들을 보여줍니다.
+
+### 📍 자동 최적화 대상들
+
+#### 1. **MainClient.tsx - 검색 필터링 (37-40라인)**
+
+```typescript
+// 🚀 React Compiler가 자동으로 메모이제이션할 부분
+const filteredCards = initialCards.filter(
+  (card) =>
+    card.title.toLowerCase().includes(search.toLowerCase()) ||
+    card.description.toLowerCase().includes(search.toLowerCase())
+);
+```
+
+**최적화 효과**: `initialCards`와 `search`가 변경될 때만 재계산
+
+#### 2. **MainClient.tsx - 페이지네이션 계산 (61-64라인)**
+
+```typescript
+// 🚀 React Compiler가 자동으로 메모이제이션할 부분
+const totalPages = Math.ceil(filteredCards.length / itemsPerPage);
+const startIndex = (currentPage - 1) * itemsPerPage;
+const endIndex = startIndex + itemsPerPage;
+const currentCards = filteredCards.slice(startIndex, endIndex);
+```
+
+**최적화 효과**: `filteredCards`, `currentPage`, `itemsPerPage`가 변경될 때만 재계산
+
+#### 3. **CardManager.tsx - displayCards 생성 (131-134라인)**
+
+```typescript
+// 🚀 React Compiler가 자동으로 메모이제이션할 부분
+const displayCards = optimisticCards.map((card) => ({
+  ...card,
+  isPending: pendingOperations.has(card.id) || card.id.startsWith("temp-"),
+}));
+```
+
+**최적화 효과**: `optimisticCards`와 `pendingOperations`가 변경될 때만 재계산
+
+#### 4. **CardManager.tsx - 임시 카드 생성 (160-165라인)**
+
+```typescript
+// 🚀 React Compiler가 자동으로 메모이제이션할 부분
+const optimisticCard: CardData = {
+  id: `temp-${Date.now()}`,
+  title: title || "",
+  description: description || "",
+  color: color || "#000000",
+};
+```
+
+**최적화 효과**: `title`, `description`, `color`가 변경될 때만 재생성
+
+#### 5. **CardManager.tsx - 핸들러 함수들**
+
+```typescript
+// 🚀 React Compiler가 자동으로 메모이제이션할 부분
+const handleCreateCard = (formData: FormData) => { ... };
+const handleDeleteCard = async (cardId: string) => { ... };
+```
+
+**최적화 효과**: 의존성이 변경되지 않으면 함수 재생성 방지
+
+### 🎯 React Compiler의 장점
+
+#### ✅ **자동 최적화**
+
+- 개발자가 `useMemo`/`useCallback`을 수동으로 추가할 필요 없음
+- 컴파일 타임에 자동으로 최적화 코드 생성
+- 코드 가독성 향상
+
+#### ✅ **성능 향상**
+
+- 불필요한 재계산 방지
+- 불필요한 함수 재생성 방지
+- 메모리 사용량 최적화
+
+#### ✅ **개발 경험**
+
+- 최적화에 대한 고민 없이 자연스러운 코드 작성
+- 버그 가능성 감소 (의존성 배열 실수 등)
+
+## 📊 Mock 데이터 활용
+
+프로젝트는 `public/mock.json` 파일에서 50개의 카드 데이터를 제공합니다.
+
+### Mock 데이터 특징
+
+- **CardData 타입 완벽 매칭**: 모든 필드가 타입 인터페이스와 일치
+- **다양한 주제**: React 19, TypeScript, Next.js 15 등 최신 기술 스택
+- **시각적 요소**: 각 카드마다 고유한 색상과 아이콘 URL
+- **실제 기술 스택**: 브랜드 색상을 반영한 현실적인 데이터
+
+### Mock 데이터 사용 방식
+
+```typescript
+// src/lib/actions.ts
+export async function fetchCards(): Promise<CardData[]> {
+  try {
+    // mock.json 파일에서 데이터 로드
+    const response = await fetch(
+      `${
+        process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
+      }/mock.json`,
+      {
+        method: "GET",
+        cache: "no-store", // 항상 최신 데이터 가져오기
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error("카드 목록 조회에 실패했습니다.");
+    }
+
+    const cards = await response.json();
+    return cards;
+  } catch (error) {
+    console.error("Fetch cards action error:", error);
+    throw error;
+  }
+}
+```
+
+## 🔧 환경 설정
+
+### .env.local 파일 생성
+
+프로젝트 루트에 `.env.local` 파일을 생성하여 환경 변수를 설정하세요:
+
+```bash
+# .env.local
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+```
+
+이 설정으로 API 호출 시 올바른 기본 URL이 사용됩니다.
+
 ## 🤝 기여하기
 
 이 프로젝트는 React 19 학습을 위한 예제 프로젝트입니다. 개선 사항이나 버그 리포트는 언제든 환영합니다!

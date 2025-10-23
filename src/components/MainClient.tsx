@@ -29,10 +29,8 @@ export default function MainClient({ cardPromise }: { cardPromise: Promise<CardD
    * 서버에서 가져온 전체 카드 데이터를 클라이언트에서 필터링합니다.
    * 검색어가 제목이나 설명에 포함된 카드만 표시합니다.
    * 
-   * 장점:
-   * - 즉시 반응하는 검색 (네트워크 요청 없음)
-   * - 서버 부하 감소
-   * - 사용자 경험 향상
+   * - initialCards와 search 가 변경될 때만 계산함
+   * - react compiler가 자동으로 최적화함
    */
   const filteredCards = initialCards.filter(card =>
     card.title.toLowerCase().includes(search.toLowerCase()) ||

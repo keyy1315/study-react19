@@ -128,6 +128,8 @@ export default function CardManager({
   );
 
   // 임시 상태가 포함된 카드 목록 생성
+  // - optimisticCards와 pendingOperations가 변경될 때만 계산함
+  // - react compiler가 자동으로 최적화함
   const displayCards = optimisticCards.map((card) => ({
     ...card,
     isPending: pendingOperations.has(card.id) || card.id.startsWith("temp-"),
@@ -157,6 +159,8 @@ export default function CardManager({
     const color = formData.get("color") as string;
 
     // 낙관적 업데이트를 위한 임시 카드 생성
+    // - optimisticCards가 변경될 때만 계산함 
+    // - react compiler가 자동으로 메모이제이션
     const optimisticCard: CardData = {
       id: `temp-${Date.now()}`, // 임시 ID
       title: title || "",
