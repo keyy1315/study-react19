@@ -1,352 +1,352 @@
 [
   {
     "id": "1",
-    "title": "React Components",
-    "description": "Learn about reusable React components and their lifecycle methods",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#61dafb"
+    "title": "React 19 Fundamentals",
+    "description": "Learn the core concepts of React 19 including new features and improvements",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg",
+    "color": "#61DAFB"
   },
   {
     "id": "2",
-    "title": "JavaScript ES6+",
-    "description": "Master modern JavaScript features including arrow functions, destructuring, and async/await",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
-    "color": "#f7df1e"
+    "title": "TypeScript Essentials",
+    "description": "Master TypeScript for better JavaScript development with type safety",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/typescript.svg",
+    "color": "#3178C6"
   },
   {
     "id": "3",
-    "title": "TypeScript Basics",
-    "description": "Type-safe JavaScript development with TypeScript interfaces and types",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/5968/5968381.png",
-    "color": "#3178c6"
-  },
-  {
-    "id": "4",
-    "title": "CSS Grid Layout",
-    "description": "Create complex layouts with CSS Grid system and responsive design",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/732/732190.png",
-    "color": "#1572b6"
-  },
-  {
-    "id": "5",
-    "title": "TailwindCSS",
-    "description": "Utility-first CSS framework for rapid UI development",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/5968/5968381.png",
-    "color": "#06b6d4"
-  },
-  {
-    "id": "6",
-    "title": "Next.js Framework",
-    "description": "Full-stack React framework with SSR and static site generation",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/5968/5968381.png",
+    "title": "Next.js 15 Guide",
+    "description": "Complete guide to building applications with Next.js 15",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nextdotjs.svg",
     "color": "#000000"
   },
   {
+    "id": "4",
+    "title": "Tailwind CSS Mastery",
+    "description": "Learn utility-first CSS framework for rapid UI development",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailwindcss.svg",
+    "color": "#06B6D4"
+  },
+  {
+    "id": "5",
+    "title": "JavaScript ES2024",
+    "description": "Explore the latest JavaScript features and syntax improvements",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg",
+    "color": "#F7DF1E"
+  },
+  {
+    "id": "6",
+    "title": "Node.js Development",
+    "description": "Build server-side applications with Node.js and Express",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nodedotjs.svg",
+    "color": "#339933"
+  },
+  {
     "id": "7",
-    "title": "State Management",
-    "description": "Manage application state with Redux, Zustand, or React Context",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#764abc"
+    "title": "MongoDB Database",
+    "description": "Learn NoSQL database management with MongoDB",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mongodb.svg",
+    "color": "#47A248"
   },
   {
     "id": "8",
-    "title": "API Integration",
-    "description": "Connect your frontend with REST APIs and GraphQL endpoints",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
-    "color": "#ff6b6b"
+    "title": "PostgreSQL Guide",
+    "description": "Master relational database management with PostgreSQL",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/postgresql.svg",
+    "color": "#336791"
   },
   {
     "id": "9",
-    "title": "Testing React Apps",
-    "description": "Write unit tests and integration tests for React applications",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#c21325"
+    "title": "Docker Containerization",
+    "description": "Containerize applications with Docker for better deployment",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg",
+    "color": "#2496ED"
   },
   {
     "id": "10",
-    "title": "Performance Optimization",
-    "description": "Optimize React app performance with memoization and lazy loading",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#4caf50"
+    "title": "AWS Cloud Services",
+    "description": "Learn Amazon Web Services for cloud computing and deployment",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/amazonaws.svg",
+    "color": "#FF9900"
   },
   {
     "id": "11",
-    "title": "Web Accessibility",
-    "description": "Build accessible web applications following WCAG guidelines",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#ff9800"
+    "title": "Git Version Control",
+    "description": "Master Git for effective version control and collaboration",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg",
+    "color": "#F05032"
   },
   {
     "id": "12",
-    "title": "Responsive Design",
-    "description": "Create mobile-first responsive designs that work on all devices",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/732/732190.png",
-    "color": "#9c27b0"
+    "title": "GitHub Workflows",
+    "description": "Automate development workflows with GitHub Actions",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg",
+    "color": "#181717"
   },
   {
     "id": "13",
-    "title": "Git Version Control",
-    "description": "Master Git commands and collaborative development workflows",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2111/2111288.png",
-    "color": "#f05032"
+    "title": "Vue.js Framework",
+    "description": "Build reactive user interfaces with Vue.js",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vuedotjs.svg",
+    "color": "#4FC08D"
   },
   {
     "id": "14",
-    "title": "Package Management",
-    "description": "Manage dependencies with npm, yarn, or pnpm package managers",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2111/2111288.png",
-    "color": "#cb3837"
+    "title": "Angular Development",
+    "description": "Create enterprise-grade applications with Angular",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/angular.svg",
+    "color": "#DD0031"
   },
   {
     "id": "15",
-    "title": "Build Tools",
-    "description": "Configure webpack, Vite, or other build tools for modern development",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#8dd6f9"
+    "title": "Svelte Framework",
+    "description": "Build fast web applications with Svelte",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/svelte.svg",
+    "color": "#FF3E00"
   },
   {
     "id": "16",
-    "title": "CSS Animations",
-    "description": "Create smooth animations and transitions with CSS and JavaScript",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/732/732190.png",
-    "color": "#e91e63"
+    "title": "GraphQL API Design",
+    "description": "Design efficient APIs with GraphQL query language",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/graphql.svg",
+    "color": "#E10098"
   },
   {
     "id": "17",
-    "title": "Form Handling",
-    "description": "Build dynamic forms with validation using React Hook Form",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#ff5722"
+    "title": "RESTful API Design",
+    "description": "Create well-structured REST APIs following best practices",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/apache.svg",
+    "color": "#D22128"
   },
   {
     "id": "18",
-    "title": "Authentication",
-    "description": "Implement user authentication and authorization in React apps",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#607d8b"
+    "title": "Webpack Bundling",
+    "description": "Optimize and bundle JavaScript applications with Webpack",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/webpack.svg",
+    "color": "#8DD6F9"
   },
   {
     "id": "19",
-    "title": "Database Design",
-    "description": "Design efficient database schemas for modern applications",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
-    "color": "#795548"
+    "title": "Vite Build Tool",
+    "description": "Fast build tool and development server for modern web projects",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vite.svg",
+    "color": "#646CFF"
   },
   {
     "id": "20",
-    "title": "Cloud Deployment",
-    "description": "Deploy React applications to cloud platforms like Vercel or Netlify",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
-    "color": "#03a9f4"
+    "title": "ESLint Code Quality",
+    "description": "Maintain code quality and consistency with ESLint",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/eslint.svg",
+    "color": "#4B32C3"
   },
   {
     "id": "21",
-    "title": "Progressive Web Apps",
-    "description": "Build PWAs with offline capabilities and app-like experiences",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#ffc107"
+    "title": "Prettier Code Formatting",
+    "description": "Automatically format code with Prettier for consistency",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/prettier.svg",
+    "color": "#F7B93E"
   },
   {
     "id": "22",
-    "title": "Microservices",
-    "description": "Architect scalable applications using microservices patterns",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
-    "color": "#673ab7"
+    "title": "Jest Testing Framework",
+    "description": "Write and run tests with Jest testing framework",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/jest.svg",
+    "color": "#C21325"
   },
   {
     "id": "23",
-    "title": "GraphQL APIs",
-    "description": "Build flexible APIs with GraphQL and Apollo Client",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#e10098"
+    "title": "Cypress E2E Testing",
+    "description": "End-to-end testing with Cypress for web applications",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/cypress.svg",
+    "color": "#17202C"
   },
   {
     "id": "24",
-    "title": "Serverless Functions",
-    "description": "Create serverless functions with AWS Lambda or Vercel Functions",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
-    "color": "#ff9800"
+    "title": "Playwright Testing",
+    "description": "Cross-browser testing automation with Playwright",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/playwright.svg",
+    "color": "#2EAD33"
   },
   {
     "id": "25",
-    "title": "Docker Containers",
-    "description": "Containerize applications with Docker for consistent deployments",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
-    "color": "#2496ed"
+    "title": "Redux State Management",
+    "description": "Predictable state container for JavaScript applications",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/redux.svg",
+    "color": "#764ABC"
   },
   {
     "id": "26",
-    "title": "CI/CD Pipelines",
-    "description": "Set up continuous integration and deployment workflows",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
-    "color": "#2088ff"
+    "title": "Zustand State Management",
+    "description": "Lightweight state management solution for React",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg",
+    "color": "#FF6B6B"
   },
   {
     "id": "27",
-    "title": "Mobile Development",
-    "description": "Build mobile apps with React Native and cross-platform solutions",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#61dafb"
+    "title": "Recoil State Management",
+    "description": "Experimental state management library for React",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg",
+    "color": "#3578E5"
   },
   {
     "id": "28",
-    "title": "Web Security",
-    "description": "Implement security best practices and protect against vulnerabilities",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
-    "color": "#f44336"
+    "title": "React Query",
+    "description": "Data fetching and caching library for React applications",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg",
+    "color": "#FF4154"
   },
   {
     "id": "29",
-    "title": "Performance Monitoring",
-    "description": "Monitor application performance with analytics and error tracking",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
-    "color": "#4caf50"
+    "title": "SWR Data Fetching",
+    "description": "Data fetching library with caching and revalidation",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vercel.svg",
+    "color": "#000000"
   },
   {
     "id": "30",
-    "title": "Code Quality",
-    "description": "Maintain high code quality with ESLint, Prettier, and code reviews",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#ff9800"
+    "title": "Apollo Client",
+    "description": "GraphQL client for React applications",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/apollographql.svg",
+    "color": "#311C87"
   },
   {
     "id": "31",
-    "title": "Design Systems",
-    "description": "Create consistent design systems with reusable components",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#9c27b0"
+    "title": "Material-UI Components",
+    "description": "React components implementing Material Design",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mui.svg",
+    "color": "#007FFF"
   },
   {
     "id": "32",
-    "title": "Data Visualization",
-    "description": "Create interactive charts and graphs with D3.js and Chart.js",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#e91e63"
+    "title": "Chakra UI Library",
+    "description": "Simple and modular component library for React",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/chakraui.svg",
+    "color": "#319795"
   },
   {
     "id": "33",
-    "title": "Real-time Features",
-    "description": "Build real-time applications with WebSockets and Socket.io",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
-    "color": "#00bcd4"
+    "title": "Ant Design Components",
+    "description": "Enterprise-class UI design language and React components",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/antdesign.svg",
+    "color": "#0170FE"
   },
   {
     "id": "34",
-    "title": "SEO Optimization",
-    "description": "Optimize React apps for search engines and improve rankings",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#ff5722"
+    "title": "React Bootstrap",
+    "description": "Bootstrap components built with React",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/bootstrap.svg",
+    "color": "#7952B3"
   },
   {
     "id": "35",
-    "title": "Internationalization",
-    "description": "Support multiple languages and locales in your applications",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#607d8b"
+    "title": "Styled Components",
+    "description": "CSS-in-JS styling solution for React components",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/styledcomponents.svg",
+    "color": "#DB7093"
   },
   {
     "id": "36",
-    "title": "Web Components",
-    "description": "Build reusable web components with custom elements",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#3f51b5"
+    "title": "Emotion CSS-in-JS",
+    "description": "CSS-in-JS library designed for high performance",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/emotion.svg",
+    "color": "#D36AC2"
   },
   {
     "id": "37",
-    "title": "Headless CMS",
-    "description": "Integrate headless content management systems with React",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
-    "color": "#795548"
+    "title": "Framer Motion",
+    "description": "Production-ready motion library for React",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/framer.svg",
+    "color": "#0055FF"
   },
   {
     "id": "38",
-    "title": "Payment Integration",
-    "description": "Implement secure payment processing with Stripe and PayPal",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
-    "color": "#4caf50"
+    "title": "React Spring",
+    "description": "Spring physics based animation library for React",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg",
+    "color": "#FF6B6B"
   },
   {
     "id": "39",
-    "title": "Email Services",
-    "description": "Send transactional emails and newsletters from your app",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
-    "color": "#ff9800"
+    "title": "Three.js 3D Graphics",
+    "description": "JavaScript 3D library for creating interactive web experiences",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/threedotjs.svg",
+    "color": "#000000"
   },
   {
     "id": "40",
-    "title": "File Upload",
-    "description": "Handle file uploads with progress tracking and validation",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#9c27b0"
+    "title": "WebGL Graphics",
+    "description": "Low-level 3D graphics API for web browsers",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/webgl.svg",
+    "color": "#990000"
   },
   {
     "id": "41",
-    "title": "Caching Strategies",
-    "description": "Implement effective caching with Redis and browser storage",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
-    "color": "#e91e63"
+    "title": "PWA Development",
+    "description": "Build Progressive Web Applications for mobile experience",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pwa.svg",
+    "color": "#5A0FC8"
   },
   {
     "id": "42",
-    "title": "Error Handling",
-    "description": "Implement robust error handling and user feedback systems",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#f44336"
+    "title": "Service Workers",
+    "description": "Background scripts for offline functionality and caching",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlechrome.svg",
+    "color": "#4285F4"
   },
   {
     "id": "43",
-    "title": "Load Testing",
-    "description": "Test application performance under various load conditions",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
-    "color": "#ff5722"
+    "title": "Web Components",
+    "description": "Reusable custom elements with encapsulated functionality",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/webcomponents.svg",
+    "color": "#29ABE2"
   },
   {
     "id": "44",
-    "title": "Browser APIs",
-    "description": "Leverage modern browser APIs for enhanced functionality",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#00bcd4"
+    "title": "WebAssembly",
+    "description": "High-performance binary instruction format for web",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/webassembly.svg",
+    "color": "#654FF0"
   },
   {
     "id": "45",
-    "title": "WebAssembly",
-    "description": "Integrate WebAssembly for high-performance computations",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#654ff0"
+    "title": "Microservices Architecture",
+    "description": "Design scalable applications with microservices pattern",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg",
+    "color": "#2496ED"
   },
   {
     "id": "46",
-    "title": "WebRTC",
-    "description": "Build real-time communication features with WebRTC",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#03a9f4"
+    "title": "Serverless Functions",
+    "description": "Build and deploy serverless applications with cloud functions",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/serverless.svg",
+    "color": "#FD5750"
   },
   {
     "id": "47",
-    "title": "Machine Learning",
-    "description": "Integrate ML models and AI features in web applications",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
-    "color": "#673ab7"
+    "title": "Kubernetes Orchestration",
+    "description": "Container orchestration platform for automated deployment",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/kubernetes.svg",
+    "color": "#326CE5"
   },
   {
     "id": "48",
-    "title": "Blockchain Integration",
-    "description": "Connect web apps with blockchain networks and smart contracts",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/2965/2965879.png",
-    "color": "#f7931a"
+    "title": "Redis Caching",
+    "description": "In-memory data structure store for caching and messaging",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/redis.svg",
+    "color": "#DC382D"
   },
   {
     "id": "49",
-    "title": "Voice Interfaces",
-    "description": "Build voice-controlled interfaces with speech recognition",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#ff9800"
+    "title": "Elasticsearch Search",
+    "description": "Distributed search and analytics engine",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/elasticsearch.svg",
+    "color": "#005571"
   },
   {
     "id": "50",
-    "title": "AR/VR Development",
-    "description": "Create immersive experiences with WebXR and AR.js",
-    "iconUrl": "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
-    "color": "#9c27b0"
+    "title": "Machine Learning with TensorFlow",
+    "description": "Build and train machine learning models with TensorFlow.js",
+    "iconUrl": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tensorflow.svg",
+    "color": "#FF6F00"
   }
 ]

@@ -53,45 +53,23 @@ export async function createCardAction(
       };
     }
 
-    // 서버 API 호출
-    // 실제 데이터베이스나 외부 서비스와 통신합니다
-    const response = await fetch(
-      `${
-        process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
-      }/api/cards`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          title: title.trim(), // 공백 제거
-          description: description.trim(),
-          iconUrl: iconUrl || undefined, // 빈 문자열 대신 undefined 사용
-          color: color || "#000000", // 기본 색상 설정
-        }),
-      }
-    );
+    // 새 카드 객체 생성 (mock 데이터 구조에 맞춤)
+    const newCard: CardData = {
+      id: Date.now().toString(), // 간단한 ID 생성
+      title: title.trim(), // 공백 제거
+      description: description.trim(),
+      iconUrl: iconUrl || undefined, // 빈 문자열 대신 undefined 사용
+      color: color || "#000000", // 기본 색상 설정
+    };
 
-    const result = await response.json();
-
-    // API 응답 상태 확인
-    if (!result.success) {
-      return {
-        success: false,
-        message: result.error || "카드 생성에 실패했습니다.",
-        error: "api_error",
-      };
-    }
-
-    // 3초 지연
+    // 3초 지연 (실제 API 호출 시뮬레이션)
     await new Promise((resolve) => setTimeout(resolve, 3000));
 
     // 성공 응답 반환
     return {
       success: true,
       message: "카드가 성공적으로 생성되었습니다.",
-      card: result.card, // 생성된 카드 데이터를 반환하여 UI에서 활용
+      card: newCard, // 생성된 카드 데이터를 반환하여 UI에서 활용
     };
   } catch (error) {
     // 예상치 못한 에러 처리
@@ -112,22 +90,29 @@ export async function deleteCardAction(cardId: string): Promise<boolean> {
       throw new Error("카드 ID가 필요합니다.");
     }
 
-    // API 호출
+    // mock.json에서 카드 목록을 가져와서 해당 카드가 존재하는지 확인
     const response = await fetch(
       `${
         process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
-      }/api/cards?id=${cardId}`,
+      }/mock.json`,
       {
-        method: "DELETE",
+        method: "GET",
+        cache: "no-store",
       }
     );
 
     if (!response.ok) {
-      const result = await response.json();
-      throw new Error(result.error || "카드 삭제에 실패했습니다.");
+      throw new Error("카드 목록을 가져올 수 없습니다.");
     }
 
-    // 3초 지연
+    const cards = await response.json();
+    const cardExists = cards.some((card: CardData) => card.id === cardId);
+
+    if (!cardExists) {
+      throw new Error("카드를 찾을 수 없습니다.");
+    }
+
+    // 3초 지연 (실제 API 호출 시뮬레이션)
     await new Promise((resolve) => setTimeout(resolve, 3000));
 
     return true;
@@ -140,26 +125,27 @@ export async function deleteCardAction(cardId: string): Promise<boolean> {
 // 카드 목록 조회 액션
 export async function fetchCards(): Promise<CardData[]> {
   try {
+    // mock.json 파일에서 데이터 로드
     const response = await fetch(
       `${
         process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
-      }/api/cards`,
+      }/mock.json`,
       {
         method: "GET",
         cache: "no-store", // 항상 최신 데이터 가져오기
       }
     );
 
-    const result = await response.json();
-
     if (!response.ok) {
-      throw new Error(result.error || "카드 목록 조회에 실패했습니다.");
+      throw new Error("카드 목록 조회에 실패했습니다.");
     }
+
+    const cards = await response.json();
 
     // 3초 지연
     await new Promise((resolve) => setTimeout(resolve, 3000));
 
-    return result.cards;
+    return cards;
   } catch (error) {
     console.error("Fetch cards action error:", error);
     throw error; // 에러를 다시 던져서 컴포넌트에서 처리할 수 있도록 함
